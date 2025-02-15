@@ -9,6 +9,7 @@ import arabic_reshaper
 from bidi.algorithm import get_display
 import matplotlib.font_manager as font_manager
 
+
 font_path = './fonts/NotoSansArabic-Bold.ttf'
 font_manager.fontManager.addfont(font_path)
 prop = font_manager.FontProperties(fname=font_path)
