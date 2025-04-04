@@ -16,7 +16,21 @@ prop = font_manager.FontProperties(fname=font_path)
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-class_names = ["الحرم المكي","العلا", "المسجد النبوي",  "جبل أحد", "برج المملكة"]  # Example class names
+class_names = ["الحرم المكي"
+                ,"العلا"
+                ,"المسجد النبوي"
+                ,"جبل أحد"
+                ,"برج المملكة"
+                ,"المصمك" 
+                ,"برج الفيصلية"
+                ,"وادي حنيفة"
+                ,"فقيه أكواريوم"
+                ,"كورنيش جدة"
+                ,"برج مياه الخبر"
+                ,"مسجد قباء"
+                ,"مسجد الراجحي" 
+                ,"المتحف الوطني" 
+                ]  
 
 image_dir = "./test_images"  # Directory containing images to test
 
@@ -80,4 +94,4 @@ for i, image_path in enumerate(image_files):
     plt.axis("off")
 
 plt.tight_layout()
-plt.show()
+plt.show() 
